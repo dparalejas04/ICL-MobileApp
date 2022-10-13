@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 88 93">
+  <g filter="url(#iBU6-yFELg_a)">
+    <ellipse cx="43.733" cy="46.28" rx="43.733" ry="46.28" fill="#fff"/>
+  </g>
+  <path d="M84.965 46.28c0 24.314-18.592 43.78-41.232 43.78C21.092 90.06 2.5 70.594 2.5 46.28S21.092 2.5 43.733 2.5c22.64 0 41.232 19.466 41.232 43.78z" stroke="#F3F3F3" stroke-width="5"/>
+  <defs>
+    <filter id="iBU6-yFELg_a" x="0" y="0" width="88.465" height="93.56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feMorphology radius="5" in="SourceAlpha" result="effect1_innerShadow_573_81852"/>
+      <feOffset dx="1" dy="1"/>
+      <feGaussianBlur stdDeviation="1.5"/>
+      <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend in2="shape" result="effect1_innerShadow_573_81852"/>
+    </filter>
+  </defs>
+</svg>
