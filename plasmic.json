@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "files",
@@ -93,6 +93,62 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "switch"
+        },
+        {
+          "id": "rtVXJJFPDt8",
+          "name": "Select",
+          "type": "managed",
+          "projectId": "e3ViewYvztDa9TzbxJa8p5",
+          "renderModuleFilePath": "plasmic/icl_mobile_app/PlasmicSelect.tsx",
+          "importSpec": {
+            "modulePath": "Select.tsx"
+          },
+          "cssFilePath": "plasmic/icl_mobile_app/PlasmicSelect.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select"
+        },
+        {
+          "id": "72l763HKqO0",
+          "name": "Select__Option",
+          "type": "managed",
+          "projectId": "e3ViewYvztDa9TzbxJa8p5",
+          "renderModuleFilePath": "plasmic/icl_mobile_app/PlasmicSelect__Option.tsx",
+          "importSpec": {
+            "modulePath": "Select__Option.tsx"
+          },
+          "cssFilePath": "plasmic/icl_mobile_app/PlasmicSelect__Option.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select-option"
+        },
+        {
+          "id": "QbtrxRcZyNA",
+          "name": "Select__OptionGroup",
+          "type": "managed",
+          "projectId": "e3ViewYvztDa9TzbxJa8p5",
+          "renderModuleFilePath": "plasmic/icl_mobile_app/PlasmicSelect__OptionGroup.tsx",
+          "importSpec": {
+            "modulePath": "Select__OptionGroup.tsx"
+          },
+          "cssFilePath": "plasmic/icl_mobile_app/PlasmicSelect__OptionGroup.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select-option-group"
+        },
+        {
+          "id": "QDHkXdk0MW-",
+          "name": "Select__Overlay",
+          "type": "managed",
+          "projectId": "e3ViewYvztDa9TzbxJa8p5",
+          "renderModuleFilePath": "plasmic/icl_mobile_app/PlasmicSelect__Overlay.tsx",
+          "importSpec": {
+            "modulePath": "Select__Overlay.tsx"
+          },
+          "cssFilePath": "plasmic/icl_mobile_app/PlasmicSelect__Overlay.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "triggered-overlay"
         }
       ],
       "icons": [
@@ -320,6 +376,16 @@
           "id": "pSqGZ7JTE",
           "name": "IconXLetter2Icon",
           "moduleFilePath": "plasmic/icl_mobile_app/icons/PlasmicIcon__IconXLetter2.tsx"
+        },
+        {
+          "id": "rjq__I5t7uw",
+          "name": "ChevronDownsvgIcon",
+          "moduleFilePath": "plasmic/icl_mobile_app/icons/PlasmicIcon__ChevronDownsvg.tsx"
+        },
+        {
+          "id": "0UmdfbgXfM2",
+          "name": "ChevronUpsvgIcon",
+          "moduleFilePath": "plasmic/icl_mobile_app/icons/PlasmicIcon__ChevronUpsvg.tsx"
         }
       ],
       "images": [

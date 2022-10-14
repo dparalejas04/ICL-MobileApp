@@ -32,6 +32,8 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Switch from "../../Switch"; // plasmic-import: EulLIyJN4yh/component
+import Select from "../../Select"; // plasmic-import: rtVXJJFPDt8/component
+import Select__Option from "../../Select__Option"; // plasmic-import: 72l763HKqO0/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -44,8 +46,6 @@ import SideBarBg10Icon from "./icons/PlasmicIcon__SideBarBg10"; // plasmic-impor
 import SideBarBg11Icon from "./icons/PlasmicIcon__SideBarBg11"; // plasmic-import: jhrBQFI_4k/icon
 import SideBarBg12Icon from "./icons/PlasmicIcon__SideBarBg12"; // plasmic-import: uJlnvwo2GU/icon
 import SideBarBg13Icon from "./icons/PlasmicIcon__SideBarBg13"; // plasmic-import: XYcxI3ttQh/icon
-import Vector3Icon from "./icons/PlasmicIcon__Vector3"; // plasmic-import: QA5A4KVZc8/icon
-import Vector4Icon from "./icons/PlasmicIcon__Vector4"; // plasmic-import: cJVc_dprcE/icon
 import Vector11Icon from "./icons/PlasmicIcon__Vector11"; // plasmic-import: 7HuyzapV0Z1/icon
 import Vector12Icon from "./icons/PlasmicIcon__Vector12"; // plasmic-import: sZCOU1rWnkY/icon
 import Vector10Icon from "./icons/PlasmicIcon__Vector10"; // plasmic-import: HfvRcbk1TR3/icon
@@ -141,12 +141,6 @@ export type PlasmicDashboardSettings__OverridesType = {
   rectangle143?: p.Flex<"div">;
   toggleShowHide5?: p.Flex<"div">;
   toggleShowHide13?: p.Flex<typeof Switch>;
-  monthsDashboardSet?: p.Flex<"div">;
-  group278?: p.Flex<"div">;
-  rectangle57?: p.Flex<"div">;
-  graphTypeDashboardSet?: p.Flex<"div">;
-  group279?: p.Flex<"div">;
-  rectangle58?: p.Flex<"div">;
   gateAttraction?: p.Flex<"div">;
   group381?: p.Flex<"div">;
   bottomNumbers2?: p.Flex<"div">;
@@ -165,12 +159,6 @@ export type PlasmicDashboardSettings__OverridesType = {
   group468?: p.Flex<"div">;
   legend3?: p.Flex<"div">;
   rectangle156?: p.Flex<"div">;
-  monthsDashboardSet2?: p.Flex<"div">;
-  group280?: p.Flex<"div">;
-  rectangle59?: p.Flex<"div">;
-  graphTypeDashboardSet2?: p.Flex<"div">;
-  group281?: p.Flex<"div">;
-  rectangle60?: p.Flex<"div">;
   toggleShowHide6?: p.Flex<"div">;
   toggleShowHide14?: p.Flex<typeof Switch>;
   legend2?: p.Flex<"div">;
@@ -194,12 +182,6 @@ export type PlasmicDashboardSettings__OverridesType = {
   rectangle160?: p.Flex<"div">;
   legend8?: p.Flex<"div">;
   rectangle161?: p.Flex<"div">;
-  monthsDashboardSet3?: p.Flex<"div">;
-  group282?: p.Flex<"div">;
-  rectangle61?: p.Flex<"div">;
-  graphTypeDashboardSet3?: p.Flex<"div">;
-  group283?: p.Flex<"div">;
-  rectangle62?: p.Flex<"div">;
   toggleShowHide7?: p.Flex<"div">;
   toggleShowHide15?: p.Flex<typeof Switch>;
   legend6?: p.Flex<"div">;
@@ -223,12 +205,6 @@ export type PlasmicDashboardSettings__OverridesType = {
   rectangle165?: p.Flex<"div">;
   legend13?: p.Flex<"div">;
   rectangle166?: p.Flex<"div">;
-  monthsDashboardSet4?: p.Flex<"div">;
-  group284?: p.Flex<"div">;
-  rectangle63?: p.Flex<"div">;
-  graphTypeDashboardSet4?: p.Flex<"div">;
-  group285?: p.Flex<"div">;
-  rectangle64?: p.Flex<"div">;
   toggleShowHide8?: p.Flex<"div">;
   toggleShowHide16?: p.Flex<typeof Switch>;
   logoHeader?: p.Flex<"div">;
@@ -1068,74 +1044,77 @@ function PlasmicDashboardSettings__RenderFunc(props: {
                   </Switch>
                 </p.Stack>
 
-                <div
-                  data-plasmic-name={"monthsDashboardSet"}
-                  data-plasmic-override={overrides.monthsDashboardSet}
-                  className={classNames(projectcss.all, sty.monthsDashboardSet)}
-                >
-                  <div
-                    data-plasmic-name={"group278"}
-                    data-plasmic-override={overrides.group278}
-                    className={classNames(projectcss.all, sty.group278)}
-                  >
-                    <div
-                      data-plasmic-name={"rectangle57"}
-                      data-plasmic-override={overrides.rectangle57}
-                      className={classNames(projectcss.all, sty.rectangle57)}
-                    />
-
+                <Select
+                  className={classNames("__wab_instance", sty.select__qcZMk)}
+                  placeholder={
                     <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__wrRsh
-                      )}
-                    >
-                      {"Last 6 Months"}
-                    </div>
-
-                    <Vector3Icon
-                      className={classNames(projectcss.all, sty.svg___3IPx0)}
-                      role={"img"}
-                    />
-                  </div>
-                </div>
-
-                <div
-                  data-plasmic-name={"graphTypeDashboardSet"}
-                  data-plasmic-override={overrides.graphTypeDashboardSet}
-                  className={classNames(
-                    projectcss.all,
-                    sty.graphTypeDashboardSet
-                  )}
-                >
-                  <div
-                    data-plasmic-name={"group279"}
-                    data-plasmic-override={overrides.group279}
-                    className={classNames(projectcss.all, sty.group279)}
-                  >
-                    <div
-                      data-plasmic-name={"rectangle58"}
-                      data-plasmic-override={overrides.rectangle58}
-                      className={classNames(projectcss.all, sty.rectangle58)}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__cu3Zw
+                        sty.text__qYW
                       )}
                     >
                       {"Graph Type"}
                     </div>
+                  }
+                >
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option__oCrEp)}
+                    value={"value1" as const}
+                  >
+                    {"Line Graph"}
+                  </Select__Option>
 
-                    <Vector4Icon
-                      className={classNames(projectcss.all, sty.svg__mP0V)}
-                      role={"img"}
-                    />
-                  </div>
-                </div>
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option___72Jc)}
+                    value={"value2" as const}
+                  >
+                    {"Pie Chart"}
+                  </Select__Option>
+
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option__aLsNe)}
+                    value={"value2 2" as const}
+                  >
+                    {"Bar Chart"}
+                  </Select__Option>
+                </Select>
+
+                <Select
+                  className={classNames("__wab_instance", sty.select__cVq3K)}
+                  placeholder={
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__fCigl
+                      )}
+                    >
+                      {"Last 6 Months"}
+                    </div>
+                  }
+                >
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option__vQ5Bw)}
+                    value={"value1" as const}
+                  >
+                    {"Last 6 Months"}
+                  </Select__Option>
+
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option___0MutQ)}
+                    value={"value2" as const}
+                  >
+                    {"This Month"}
+                  </Select__Option>
+
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option__iTip)}
+                    value={"value2 2" as const}
+                  >
+                    {"1 Week"}
+                  </Select__Option>
+                </Select>
               </div>
             </p.Stack>
 
@@ -1461,78 +1440,6 @@ function PlasmicDashboardSettings__RenderFunc(props: {
                   </p.Stack>
                 </div>
 
-                <div
-                  data-plasmic-name={"monthsDashboardSet2"}
-                  data-plasmic-override={overrides.monthsDashboardSet2}
-                  className={classNames(
-                    projectcss.all,
-                    sty.monthsDashboardSet2
-                  )}
-                >
-                  <div
-                    data-plasmic-name={"group280"}
-                    data-plasmic-override={overrides.group280}
-                    className={classNames(projectcss.all, sty.group280)}
-                  >
-                    <div
-                      data-plasmic-name={"rectangle59"}
-                      data-plasmic-override={overrides.rectangle59}
-                      className={classNames(projectcss.all, sty.rectangle59)}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__io5Um
-                      )}
-                    >
-                      {"Last 6 Months"}
-                    </div>
-
-                    <Vector3Icon
-                      className={classNames(projectcss.all, sty.svg__yIg9)}
-                      role={"img"}
-                    />
-                  </div>
-                </div>
-
-                <div
-                  data-plasmic-name={"graphTypeDashboardSet2"}
-                  data-plasmic-override={overrides.graphTypeDashboardSet2}
-                  className={classNames(
-                    projectcss.all,
-                    sty.graphTypeDashboardSet2
-                  )}
-                >
-                  <div
-                    data-plasmic-name={"group281"}
-                    data-plasmic-override={overrides.group281}
-                    className={classNames(projectcss.all, sty.group281)}
-                  >
-                    <div
-                      data-plasmic-name={"rectangle60"}
-                      data-plasmic-override={overrides.rectangle60}
-                      className={classNames(projectcss.all, sty.rectangle60)}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__sqnO4
-                      )}
-                    >
-                      {"Graph Type"}
-                    </div>
-
-                    <Vector4Icon
-                      className={classNames(projectcss.all, sty.svg__ut7Mb)}
-                      role={"img"}
-                    />
-                  </div>
-                </div>
-
                 <p.Stack
                   as={"div"}
                   data-plasmic-name={"toggleShowHide6"}
@@ -1575,6 +1482,78 @@ function PlasmicDashboardSettings__RenderFunc(props: {
                     {"Sold at the Gate"}
                   </div>
                 </p.Stack>
+
+                <Select
+                  className={classNames("__wab_instance", sty.select__aus5F)}
+                  placeholder={
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__jOObo
+                      )}
+                    >
+                      {"Graph Type"}
+                    </div>
+                  }
+                >
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option__eQuTe)}
+                    value={"value1" as const}
+                  >
+                    {"Line Graph"}
+                  </Select__Option>
+
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option___72Jc)}
+                    value={"value2" as const}
+                  >
+                    {"Pie Chart"}
+                  </Select__Option>
+
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option__aLsNe)}
+                    value={"value2 2" as const}
+                  >
+                    {"Bar Chart"}
+                  </Select__Option>
+                </Select>
+
+                <Select
+                  className={classNames("__wab_instance", sty.select__xg2M)}
+                  placeholder={
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___9G8T
+                      )}
+                    >
+                      {"Last 6 Months"}
+                    </div>
+                  }
+                >
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option___6LiUm)}
+                    value={"value1" as const}
+                  >
+                    {"Last 6 Months"}
+                  </Select__Option>
+
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option___0MutQ)}
+                    value={"value2" as const}
+                  >
+                    {"This Month"}
+                  </Select__Option>
+
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option__iTip)}
+                    value={"value2 2" as const}
+                  >
+                    {"1 Week"}
+                  </Select__Option>
+                </Select>
               </div>
             </p.Stack>
 
@@ -1846,78 +1825,6 @@ function PlasmicDashboardSettings__RenderFunc(props: {
                   {"LOCATIONS"}
                 </div>
 
-                <div
-                  data-plasmic-name={"monthsDashboardSet3"}
-                  data-plasmic-override={overrides.monthsDashboardSet3}
-                  className={classNames(
-                    projectcss.all,
-                    sty.monthsDashboardSet3
-                  )}
-                >
-                  <div
-                    data-plasmic-name={"group282"}
-                    data-plasmic-override={overrides.group282}
-                    className={classNames(projectcss.all, sty.group282)}
-                  >
-                    <div
-                      data-plasmic-name={"rectangle61"}
-                      data-plasmic-override={overrides.rectangle61}
-                      className={classNames(projectcss.all, sty.rectangle61)}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__oKzZi
-                      )}
-                    >
-                      {"Last 6 Months"}
-                    </div>
-
-                    <Vector3Icon
-                      className={classNames(projectcss.all, sty.svg__kmnbh)}
-                      role={"img"}
-                    />
-                  </div>
-                </div>
-
-                <div
-                  data-plasmic-name={"graphTypeDashboardSet3"}
-                  data-plasmic-override={overrides.graphTypeDashboardSet3}
-                  className={classNames(
-                    projectcss.all,
-                    sty.graphTypeDashboardSet3
-                  )}
-                >
-                  <div
-                    data-plasmic-name={"group283"}
-                    data-plasmic-override={overrides.group283}
-                    className={classNames(projectcss.all, sty.group283)}
-                  >
-                    <div
-                      data-plasmic-name={"rectangle62"}
-                      data-plasmic-override={overrides.rectangle62}
-                      className={classNames(projectcss.all, sty.rectangle62)}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__uLm6H
-                      )}
-                    >
-                      {"Graph Type"}
-                    </div>
-
-                    <Vector4Icon
-                      className={classNames(projectcss.all, sty.svg__icQI)}
-                      role={"img"}
-                    />
-                  </div>
-                </div>
-
                 <p.Stack
                   as={"div"}
                   data-plasmic-name={"toggleShowHide7"}
@@ -1960,6 +1867,78 @@ function PlasmicDashboardSettings__RenderFunc(props: {
                     {"Location 3"}
                   </div>
                 </p.Stack>
+
+                <Select
+                  className={classNames("__wab_instance", sty.select__wUak)}
+                  placeholder={
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__adLpj
+                      )}
+                    >
+                      {"Graph Type"}
+                    </div>
+                  }
+                >
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option__dnmTa)}
+                    value={"value1" as const}
+                  >
+                    {"Line Graph"}
+                  </Select__Option>
+
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option___72Jc)}
+                    value={"value2" as const}
+                  >
+                    {"Pie Chart"}
+                  </Select__Option>
+
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option__aLsNe)}
+                    value={"value2 2" as const}
+                  >
+                    {"Bar Chart"}
+                  </Select__Option>
+                </Select>
+
+                <Select
+                  className={classNames("__wab_instance", sty.select__mHneM)}
+                  placeholder={
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___07LX
+                      )}
+                    >
+                      {"Last 6 Months"}
+                    </div>
+                  }
+                >
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option__rAvsR)}
+                    value={"value1" as const}
+                  >
+                    {"Last 6 Months"}
+                  </Select__Option>
+
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option___0MutQ)}
+                    value={"value2" as const}
+                  >
+                    {"This Month"}
+                  </Select__Option>
+
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option__iTip)}
+                    value={"value2 2" as const}
+                  >
+                    {"1 Week"}
+                  </Select__Option>
+                </Select>
               </div>
             </p.Stack>
 
@@ -2258,78 +2237,6 @@ function PlasmicDashboardSettings__RenderFunc(props: {
                   </p.Stack>
                 </div>
 
-                <div
-                  data-plasmic-name={"monthsDashboardSet4"}
-                  data-plasmic-override={overrides.monthsDashboardSet4}
-                  className={classNames(
-                    projectcss.all,
-                    sty.monthsDashboardSet4
-                  )}
-                >
-                  <div
-                    data-plasmic-name={"group284"}
-                    data-plasmic-override={overrides.group284}
-                    className={classNames(projectcss.all, sty.group284)}
-                  >
-                    <div
-                      data-plasmic-name={"rectangle63"}
-                      data-plasmic-override={overrides.rectangle63}
-                      className={classNames(projectcss.all, sty.rectangle63)}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__zKmMp
-                      )}
-                    >
-                      {"Last 6 Months"}
-                    </div>
-
-                    <Vector3Icon
-                      className={classNames(projectcss.all, sty.svg__oN65O)}
-                      role={"img"}
-                    />
-                  </div>
-                </div>
-
-                <div
-                  data-plasmic-name={"graphTypeDashboardSet4"}
-                  data-plasmic-override={overrides.graphTypeDashboardSet4}
-                  className={classNames(
-                    projectcss.all,
-                    sty.graphTypeDashboardSet4
-                  )}
-                >
-                  <div
-                    data-plasmic-name={"group285"}
-                    data-plasmic-override={overrides.group285}
-                    className={classNames(projectcss.all, sty.group285)}
-                  >
-                    <div
-                      data-plasmic-name={"rectangle64"}
-                      data-plasmic-override={overrides.rectangle64}
-                      className={classNames(projectcss.all, sty.rectangle64)}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___8Bzm0
-                      )}
-                    >
-                      {"Graph Type"}
-                    </div>
-
-                    <Vector4Icon
-                      className={classNames(projectcss.all, sty.svg__qmFBv)}
-                      role={"img"}
-                    />
-                  </div>
-                </div>
-
                 <p.Stack
                   as={"div"}
                   data-plasmic-name={"toggleShowHide8"}
@@ -2348,6 +2255,78 @@ function PlasmicDashboardSettings__RenderFunc(props: {
                     {"Show"}
                   </Switch>
                 </p.Stack>
+
+                <Select
+                  className={classNames("__wab_instance", sty.select__cnv2)}
+                  placeholder={
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__aypyB
+                      )}
+                    >
+                      {"Graph Type"}
+                    </div>
+                  }
+                >
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option__rqmLp)}
+                    value={"value1" as const}
+                  >
+                    {"Line Graph"}
+                  </Select__Option>
+
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option___72Jc)}
+                    value={"value2" as const}
+                  >
+                    {"Pie Chart"}
+                  </Select__Option>
+
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option__aLsNe)}
+                    value={"value2 2" as const}
+                  >
+                    {"Bar Chart"}
+                  </Select__Option>
+                </Select>
+
+                <Select
+                  className={classNames("__wab_instance", sty.select__qyExz)}
+                  placeholder={
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__poXe6
+                      )}
+                    >
+                      {"Last 6 Months"}
+                    </div>
+                  }
+                >
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option__wrDbO)}
+                    value={"value1" as const}
+                  >
+                    {"Last 6 Months"}
+                  </Select__Option>
+
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option___0MutQ)}
+                    value={"value2" as const}
+                  >
+                    {"This Month"}
+                  </Select__Option>
+
+                  <Select__Option
+                    className={classNames("__wab_instance", sty.option__iTip)}
+                    value={"value2 2" as const}
+                  >
+                    {"1 Week"}
+                  </Select__Option>
+                </Select>
               </div>
             </p.Stack>
           </div>
@@ -2493,12 +2472,6 @@ const PlasmicDescendants = {
     "rectangle143",
     "toggleShowHide5",
     "toggleShowHide13",
-    "monthsDashboardSet",
-    "group278",
-    "rectangle57",
-    "graphTypeDashboardSet",
-    "group279",
-    "rectangle58",
     "gateAttraction",
     "group381",
     "bottomNumbers2",
@@ -2517,12 +2490,6 @@ const PlasmicDescendants = {
     "group468",
     "legend3",
     "rectangle156",
-    "monthsDashboardSet2",
-    "group280",
-    "rectangle59",
-    "graphTypeDashboardSet2",
-    "group281",
-    "rectangle60",
     "toggleShowHide6",
     "toggleShowHide14",
     "legend2",
@@ -2546,12 +2513,6 @@ const PlasmicDescendants = {
     "rectangle160",
     "legend8",
     "rectangle161",
-    "monthsDashboardSet3",
-    "group282",
-    "rectangle61",
-    "graphTypeDashboardSet3",
-    "group283",
-    "rectangle62",
     "toggleShowHide7",
     "toggleShowHide15",
     "legend6",
@@ -2575,12 +2536,6 @@ const PlasmicDescendants = {
     "rectangle165",
     "legend13",
     "rectangle166",
-    "monthsDashboardSet4",
-    "group284",
-    "rectangle63",
-    "graphTypeDashboardSet4",
-    "group285",
-    "rectangle64",
     "toggleShowHide8",
     "toggleShowHide16",
     "logoHeader",
@@ -2647,12 +2602,6 @@ const PlasmicDescendants = {
     "rectangle143",
     "toggleShowHide5",
     "toggleShowHide13",
-    "monthsDashboardSet",
-    "group278",
-    "rectangle57",
-    "graphTypeDashboardSet",
-    "group279",
-    "rectangle58",
     "gateAttraction",
     "group381",
     "bottomNumbers2",
@@ -2671,12 +2620,6 @@ const PlasmicDescendants = {
     "group468",
     "legend3",
     "rectangle156",
-    "monthsDashboardSet2",
-    "group280",
-    "rectangle59",
-    "graphTypeDashboardSet2",
-    "group281",
-    "rectangle60",
     "toggleShowHide6",
     "toggleShowHide14",
     "legend2",
@@ -2700,12 +2643,6 @@ const PlasmicDescendants = {
     "rectangle160",
     "legend8",
     "rectangle161",
-    "monthsDashboardSet3",
-    "group282",
-    "rectangle61",
-    "graphTypeDashboardSet3",
-    "group283",
-    "rectangle62",
     "toggleShowHide7",
     "toggleShowHide15",
     "legend6",
@@ -2729,12 +2666,6 @@ const PlasmicDescendants = {
     "rectangle165",
     "legend13",
     "rectangle166",
-    "monthsDashboardSet4",
-    "group284",
-    "rectangle63",
-    "graphTypeDashboardSet4",
-    "group285",
-    "rectangle64",
     "toggleShowHide8",
     "toggleShowHide16",
     "logoHeader",
@@ -2800,12 +2731,6 @@ const PlasmicDescendants = {
     "rectangle143",
     "toggleShowHide5",
     "toggleShowHide13",
-    "monthsDashboardSet",
-    "group278",
-    "rectangle57",
-    "graphTypeDashboardSet",
-    "group279",
-    "rectangle58",
     "gateAttraction",
     "group381",
     "bottomNumbers2",
@@ -2824,12 +2749,6 @@ const PlasmicDescendants = {
     "group468",
     "legend3",
     "rectangle156",
-    "monthsDashboardSet2",
-    "group280",
-    "rectangle59",
-    "graphTypeDashboardSet2",
-    "group281",
-    "rectangle60",
     "toggleShowHide6",
     "toggleShowHide14",
     "legend2",
@@ -2853,12 +2772,6 @@ const PlasmicDescendants = {
     "rectangle160",
     "legend8",
     "rectangle161",
-    "monthsDashboardSet3",
-    "group282",
-    "rectangle61",
-    "graphTypeDashboardSet3",
-    "group283",
-    "rectangle62",
     "toggleShowHide7",
     "toggleShowHide15",
     "legend6",
@@ -2882,12 +2795,6 @@ const PlasmicDescendants = {
     "rectangle165",
     "legend13",
     "rectangle166",
-    "monthsDashboardSet4",
-    "group284",
-    "rectangle63",
-    "graphTypeDashboardSet4",
-    "group285",
-    "rectangle64",
     "toggleShowHide8",
     "toggleShowHide16"
   ],
@@ -3015,13 +2922,7 @@ const PlasmicDescendants = {
     "legend",
     "rectangle143",
     "toggleShowHide5",
-    "toggleShowHide13",
-    "monthsDashboardSet",
-    "group278",
-    "rectangle57",
-    "graphTypeDashboardSet",
-    "group279",
-    "rectangle58"
+    "toggleShowHide13"
   ],
   group380: [
     "group380",
@@ -3037,13 +2938,7 @@ const PlasmicDescendants = {
     "legend",
     "rectangle143",
     "toggleShowHide5",
-    "toggleShowHide13",
-    "monthsDashboardSet",
-    "group278",
-    "rectangle57",
-    "graphTypeDashboardSet",
-    "group279",
-    "rectangle58"
+    "toggleShowHide13"
   ],
   bars: [
     "bars",
@@ -3066,12 +2961,6 @@ const PlasmicDescendants = {
   rectangle143: ["rectangle143"],
   toggleShowHide5: ["toggleShowHide5", "toggleShowHide13"],
   toggleShowHide13: ["toggleShowHide13"],
-  monthsDashboardSet: ["monthsDashboardSet", "group278", "rectangle57"],
-  group278: ["group278", "rectangle57"],
-  rectangle57: ["rectangle57"],
-  graphTypeDashboardSet: ["graphTypeDashboardSet", "group279", "rectangle58"],
-  group279: ["group279", "rectangle58"],
-  rectangle58: ["rectangle58"],
   gateAttraction: [
     "gateAttraction",
     "group381",
@@ -3091,12 +2980,6 @@ const PlasmicDescendants = {
     "group468",
     "legend3",
     "rectangle156",
-    "monthsDashboardSet2",
-    "group280",
-    "rectangle59",
-    "graphTypeDashboardSet2",
-    "group281",
-    "rectangle60",
     "toggleShowHide6",
     "toggleShowHide14",
     "legend2",
@@ -3120,12 +3003,6 @@ const PlasmicDescendants = {
     "group468",
     "legend3",
     "rectangle156",
-    "monthsDashboardSet2",
-    "group280",
-    "rectangle59",
-    "graphTypeDashboardSet2",
-    "group281",
-    "rectangle60",
     "toggleShowHide6",
     "toggleShowHide14",
     "legend2",
@@ -3155,12 +3032,6 @@ const PlasmicDescendants = {
   group468: ["group468", "legend3", "rectangle156"],
   legend3: ["legend3", "rectangle156"],
   rectangle156: ["rectangle156"],
-  monthsDashboardSet2: ["monthsDashboardSet2", "group280", "rectangle59"],
-  group280: ["group280", "rectangle59"],
-  rectangle59: ["rectangle59"],
-  graphTypeDashboardSet2: ["graphTypeDashboardSet2", "group281", "rectangle60"],
-  group281: ["group281", "rectangle60"],
-  rectangle60: ["rectangle60"],
   toggleShowHide6: ["toggleShowHide6", "toggleShowHide14"],
   toggleShowHide14: ["toggleShowHide14"],
   legend2: ["legend2", "rectangle155"],
@@ -3185,12 +3056,6 @@ const PlasmicDescendants = {
     "rectangle160",
     "legend8",
     "rectangle161",
-    "monthsDashboardSet3",
-    "group282",
-    "rectangle61",
-    "graphTypeDashboardSet3",
-    "group283",
-    "rectangle62",
     "toggleShowHide7",
     "toggleShowHide15",
     "legend6",
@@ -3215,12 +3080,6 @@ const PlasmicDescendants = {
     "rectangle160",
     "legend8",
     "rectangle161",
-    "monthsDashboardSet3",
-    "group282",
-    "rectangle61",
-    "graphTypeDashboardSet3",
-    "group283",
-    "rectangle62",
     "toggleShowHide7",
     "toggleShowHide15",
     "legend6",
@@ -3270,12 +3129,6 @@ const PlasmicDescendants = {
   rectangle160: ["rectangle160"],
   legend8: ["legend8", "rectangle161"],
   rectangle161: ["rectangle161"],
-  monthsDashboardSet3: ["monthsDashboardSet3", "group282", "rectangle61"],
-  group282: ["group282", "rectangle61"],
-  rectangle61: ["rectangle61"],
-  graphTypeDashboardSet3: ["graphTypeDashboardSet3", "group283", "rectangle62"],
-  group283: ["group283", "rectangle62"],
-  rectangle62: ["rectangle62"],
   toggleShowHide7: ["toggleShowHide7", "toggleShowHide15"],
   toggleShowHide15: ["toggleShowHide15"],
   legend6: ["legend6", "rectangle159"],
@@ -3300,12 +3153,6 @@ const PlasmicDescendants = {
     "rectangle165",
     "legend13",
     "rectangle166",
-    "monthsDashboardSet4",
-    "group284",
-    "rectangle63",
-    "graphTypeDashboardSet4",
-    "group285",
-    "rectangle64",
     "toggleShowHide8",
     "toggleShowHide16"
   ],
@@ -3328,12 +3175,6 @@ const PlasmicDescendants = {
     "rectangle165",
     "legend13",
     "rectangle166",
-    "monthsDashboardSet4",
-    "group284",
-    "rectangle63",
-    "graphTypeDashboardSet4",
-    "group285",
-    "rectangle64",
     "toggleShowHide8",
     "toggleShowHide16"
   ],
@@ -3373,12 +3214,6 @@ const PlasmicDescendants = {
   rectangle165: ["rectangle165"],
   legend13: ["legend13", "rectangle166"],
   rectangle166: ["rectangle166"],
-  monthsDashboardSet4: ["monthsDashboardSet4", "group284", "rectangle63"],
-  group284: ["group284", "rectangle63"],
-  rectangle63: ["rectangle63"],
-  graphTypeDashboardSet4: ["graphTypeDashboardSet4", "group285", "rectangle64"],
-  group285: ["group285", "rectangle64"],
-  rectangle64: ["rectangle64"],
   toggleShowHide8: ["toggleShowHide8", "toggleShowHide16"],
   toggleShowHide16: ["toggleShowHide16"],
   logoHeader: ["logoHeader", "intercardLogoNoTagline"],
@@ -3456,12 +3291,6 @@ type NodeDefaultElementType = {
   rectangle143: "div";
   toggleShowHide5: "div";
   toggleShowHide13: typeof Switch;
-  monthsDashboardSet: "div";
-  group278: "div";
-  rectangle57: "div";
-  graphTypeDashboardSet: "div";
-  group279: "div";
-  rectangle58: "div";
   gateAttraction: "div";
   group381: "div";
   bottomNumbers2: "div";
@@ -3480,12 +3309,6 @@ type NodeDefaultElementType = {
   group468: "div";
   legend3: "div";
   rectangle156: "div";
-  monthsDashboardSet2: "div";
-  group280: "div";
-  rectangle59: "div";
-  graphTypeDashboardSet2: "div";
-  group281: "div";
-  rectangle60: "div";
   toggleShowHide6: "div";
   toggleShowHide14: typeof Switch;
   legend2: "div";
@@ -3509,12 +3332,6 @@ type NodeDefaultElementType = {
   rectangle160: "div";
   legend8: "div";
   rectangle161: "div";
-  monthsDashboardSet3: "div";
-  group282: "div";
-  rectangle61: "div";
-  graphTypeDashboardSet3: "div";
-  group283: "div";
-  rectangle62: "div";
   toggleShowHide7: "div";
   toggleShowHide15: typeof Switch;
   legend6: "div";
@@ -3538,12 +3355,6 @@ type NodeDefaultElementType = {
   rectangle165: "div";
   legend13: "div";
   rectangle166: "div";
-  monthsDashboardSet4: "div";
-  group284: "div";
-  rectangle63: "div";
-  graphTypeDashboardSet4: "div";
-  group285: "div";
-  rectangle64: "div";
   toggleShowHide8: "div";
   toggleShowHide16: typeof Switch;
   logoHeader: "div";
@@ -3675,12 +3486,6 @@ export const PlasmicDashboardSettings = Object.assign(
     rectangle143: makeNodeComponent("rectangle143"),
     toggleShowHide5: makeNodeComponent("toggleShowHide5"),
     toggleShowHide13: makeNodeComponent("toggleShowHide13"),
-    monthsDashboardSet: makeNodeComponent("monthsDashboardSet"),
-    group278: makeNodeComponent("group278"),
-    rectangle57: makeNodeComponent("rectangle57"),
-    graphTypeDashboardSet: makeNodeComponent("graphTypeDashboardSet"),
-    group279: makeNodeComponent("group279"),
-    rectangle58: makeNodeComponent("rectangle58"),
     gateAttraction: makeNodeComponent("gateAttraction"),
     group381: makeNodeComponent("group381"),
     bottomNumbers2: makeNodeComponent("bottomNumbers2"),
@@ -3699,12 +3504,6 @@ export const PlasmicDashboardSettings = Object.assign(
     group468: makeNodeComponent("group468"),
     legend3: makeNodeComponent("legend3"),
     rectangle156: makeNodeComponent("rectangle156"),
-    monthsDashboardSet2: makeNodeComponent("monthsDashboardSet2"),
-    group280: makeNodeComponent("group280"),
-    rectangle59: makeNodeComponent("rectangle59"),
-    graphTypeDashboardSet2: makeNodeComponent("graphTypeDashboardSet2"),
-    group281: makeNodeComponent("group281"),
-    rectangle60: makeNodeComponent("rectangle60"),
     toggleShowHide6: makeNodeComponent("toggleShowHide6"),
     toggleShowHide14: makeNodeComponent("toggleShowHide14"),
     legend2: makeNodeComponent("legend2"),
@@ -3728,12 +3527,6 @@ export const PlasmicDashboardSettings = Object.assign(
     rectangle160: makeNodeComponent("rectangle160"),
     legend8: makeNodeComponent("legend8"),
     rectangle161: makeNodeComponent("rectangle161"),
-    monthsDashboardSet3: makeNodeComponent("monthsDashboardSet3"),
-    group282: makeNodeComponent("group282"),
-    rectangle61: makeNodeComponent("rectangle61"),
-    graphTypeDashboardSet3: makeNodeComponent("graphTypeDashboardSet3"),
-    group283: makeNodeComponent("group283"),
-    rectangle62: makeNodeComponent("rectangle62"),
     toggleShowHide7: makeNodeComponent("toggleShowHide7"),
     toggleShowHide15: makeNodeComponent("toggleShowHide15"),
     legend6: makeNodeComponent("legend6"),
@@ -3757,12 +3550,6 @@ export const PlasmicDashboardSettings = Object.assign(
     rectangle165: makeNodeComponent("rectangle165"),
     legend13: makeNodeComponent("legend13"),
     rectangle166: makeNodeComponent("rectangle166"),
-    monthsDashboardSet4: makeNodeComponent("monthsDashboardSet4"),
-    group284: makeNodeComponent("group284"),
-    rectangle63: makeNodeComponent("rectangle63"),
-    graphTypeDashboardSet4: makeNodeComponent("graphTypeDashboardSet4"),
-    group285: makeNodeComponent("group285"),
-    rectangle64: makeNodeComponent("rectangle64"),
     toggleShowHide8: makeNodeComponent("toggleShowHide8"),
     toggleShowHide16: makeNodeComponent("toggleShowHide16"),
     logoHeader: makeNodeComponent("logoHeader"),
